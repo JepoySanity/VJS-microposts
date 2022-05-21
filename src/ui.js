@@ -21,7 +21,7 @@ class UI {
             </a>
             <a href="#" class="delete btn btn-danger" data-id="${post.id}">
               <i class="fa fa-trash"></i>
-          </a>
+            </a>
           </div>
         </div>
       `;
