@@ -1,34 +1,9 @@
 {
   "posts": [
     {
-      "title": "aaaa",
-      "body": "aaa",
+      "title": "testing update",
+      "body": "test1",
       "id": 1
-    },
-    {
-      "title": "aa",
-      "body": "aaaaaaa",
-      "id": 2
-    },
-    {
-      "title": "aaa",
-      "body": "aa",
-      "id": 3
-    },
-    {
-      "title": "aaa",
-      "body": "aa",
-      "id": 4
-    },
-    {
-      "title": "aaaa",
-      "body": "aaa",
-      "id": 5
-    },
-    {
-      "title": "aa",
-      "body": "aa",
-      "id": 6
     }
   ]
 }

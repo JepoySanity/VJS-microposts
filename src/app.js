@@ -25,21 +25,35 @@ function getPosts() {
 function submitPost() {
   const title = document.querySelector("#title").value;
   const body = document.querySelector("#body").value;
+  const id = document.querySelector("#id").value;
 
+  const data = {
+    title,
+    body,
+  };
   if (title !== "" && body !== "") {
-    const data = {
-      title,
-      body,
-    };
-
-    http
-      .post("http://localhost:3000/posts", data)
-      .then((data) => {
-        ui.showAlert("Post added", "alert alert-success");
-        ui.clearFields();
-        getPosts();
-      })
-      .catch((err) => console.log(err));
+    //check if id exist, if exist = create state
+    if (id === "") {
+      //create post
+      http
+        .post("http://localhost:3000/posts", data)
+        .then((data) => {
+          ui.showAlert("Post added", "alert alert-success");
+          ui.clearFields();
+          getPosts();
+        })
+        .catch((err) => console.log(err));
+    } else {
+      //update post
+      http
+        .put(`http://localhost:3000/posts/${id}`, data)
+        .then((data) => {
+          ui.showAlert("Post updated", "alert alert-success");
+          ui.changeFormState("add");
+          getPosts();
+        })
+        .catch((err) => console.log(err));
+    }
   } else {
     ui.showAlert("Input cannot be empty!", "alert alert-danger");
   }
