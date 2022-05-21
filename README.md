@@ -10,7 +10,7 @@ A starter pack to build JavaScript applications using standards from ES2015, ES2
 ### Installation
 
 Install the dependencies
-
+Cancel changes
 ```sh
 $ npm install
 ```
@@ -28,14 +28,3 @@ Compile and build
 ```sh
 $ npm run build
 ```
-
-## More Info
-
-### Author
-
-Brad Traversy
-[Traversy Media](http://www.traversymedia.com)
-
-### License
-
-This project is licensed under the MIT License
