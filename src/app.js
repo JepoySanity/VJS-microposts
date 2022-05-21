@@ -1,2 +1,1 @@
-const greeting = 'Hello World';
-console.log(greeting);
+import { http } from "./http";
